@@ -17,18 +17,18 @@ MonoBehaviour:
     - type: 1
       icon: {fileID: 21300000, guid: 32a21180eede9924eb1b37f03519bd24, type: 3}
       color: 0
-      count: 20
+      targetCount: 20
       countCollected: 0
       guiObj: {fileID: 0}
     - type: 1
       icon: {fileID: 21300000, guid: b64d9d08131b9f8448d01aeb8fdb5819, type: 3}
       color: 1
-      count: 25
+      targetCount: 25
       countCollected: 0
       guiObj: {fileID: 0}
     - type: 0
       icon: {fileID: 21300000, guid: 26b9cedaba2de3b40b482c3891c9be56, type: 3}
       color: 0
-      count: 2300
+      targetCount: 2150
       countCollected: 0
       guiObj: {fileID: 0}
