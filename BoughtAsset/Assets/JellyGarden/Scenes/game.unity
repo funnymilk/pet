@@ -6815,9 +6815,9 @@ MonoBehaviour:
   scoreForSolidBlock: 100
   scoreForThrivingBlock: 100
   limitType: 0
-  Limit: 30
+  Limit: 25
   TargetScore: 1000
-  currentLevel: 91
+  currentLevel: 97
   FailedCost: 12
   ExtraFailedMoves: 5
   ExtraFailedSecs: 30
@@ -6871,9 +6871,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   stars: 0
-  star1: 6800
-  star2: 10200
-  star3: 15000
+  star1: 1500
+  star2: 1900
+  star3: 3200
   showPopupScores: 0
   stripesEffect: {fileID: 100804, guid: c1d86e442930a7b40835a0fbad225fbd, type: 3}
   star1Anim: {fileID: 1966708837}
@@ -6894,10 +6894,10 @@ MonoBehaviour:
   - {r: 0, g: 0.2509804, b: 0.7137255, a: 1}
   - {r: 0.68235296, g: 0.40784314, b: 0, a: 1}
   - {r: 0.07450981, g: 0.43529412, b: 0, a: 1}
-  colorLimit: 4
+  colorLimit: 5
   ingrCountTarget: 0000000000000000
   ingrTarget: 0100000002000000
-  collectItems: 0100000004000000
+  collectItems: 0200000005000000
   ingrediendSprites:
   - {fileID: 0}
   - {fileID: 21300000, guid: 63938c0f13ed90f44a5a7ad659f6262a, type: 3}
@@ -6941,7 +6941,7 @@ MonoBehaviour:
   - type: 0
     icon: {fileID: 21300000, guid: 26b9cedaba2de3b40b482c3891c9be56, type: 3}
     color: 0
-    targetCount: 6800
+    targetCount: 1500
     countCollected: 0
     guiObj: {fileID: 0}
 --- !u!114 &511786113
