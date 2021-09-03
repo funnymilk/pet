@@ -10,7 +10,7 @@ public class LifeShop : MonoBehaviour
 	{
 		transform.Find ("Image/BuyLife/Price").GetComponent<Text> ().text = "" + CostIfRefill;
 		if (!LevelManager.THIS.enableInApps)
-			transform.Find ("Image/BuyLife").gameObject.SetActive (false);
+			transform.Find ("Image/BuyLife").gameObject.SetActive (true);
 		
 	}
 	
