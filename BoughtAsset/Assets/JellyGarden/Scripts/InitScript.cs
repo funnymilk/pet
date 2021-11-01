@@ -216,6 +216,12 @@ public class InitScript : MonoBehaviour
 
 #if UNITY_ADS//2.1.1
         enableUnityAds = true;
+        var unityAds = Resources.Load<UnityAdsID>("UnityAdsID");
+#if UNITY_ANDROID
+        Advertisement.Initialize(unityAds.androidID,false);
+#elif UNITY_IOS
+            Advertisement.Initialize(unityAds.iOSID,false);
+#endif
 #else
         enableUnityAds = false;
 #endif
@@ -234,13 +240,13 @@ public class InitScript : MonoBehaviour
 #if GOOGLE_MOBILE_ADS
         enableGoogleMobileAds = true;//1.6.1
 #if UNITY_ANDROID
-        MobileAds.Initialize(admobUIDAndroid);//2.1.6
+        MobileAds.Initialize(initStatus => { });//2.1.6
         interstitial = new InterstitialAd(admobUIDAndroid);
 #elif UNITY_IOS
-        MobileAds.Initialize(admobUIDIOS);//2.1.6
+        MobileAds.Initialize(initStatus => { });//2.1.6
         interstitial = new InterstitialAd(admobUIDIOS);
 #else
-        MobileAds.Initialize(admobUIDAndroid);//2.1.6
+        MobileAds.Initialize(initStatus => { });//2.1.6
 		interstitial = new InterstitialAd (admobUIDAndroid);
 #endif
 
@@ -269,7 +275,7 @@ public class InitScript : MonoBehaviour
 
     public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
-        print("HandleInterstitialFailedToLoad event received with message: " + args.Message);
+        print("HandleInterstitialFailedToLoad event received with message: " + args.LoadAdError);
     }
 #endif
 
@@ -340,6 +346,10 @@ public class InitScript : MonoBehaviour
                     if (result == ShowResult.Finished)
                     {
                         CheckRewardedAds();
+                    }
+                    else
+                    {
+                        LevelManager.Instance.gameStatus = GameState.GameOver;
                     }
                 }
             });

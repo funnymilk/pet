@@ -6654,25 +6654,17 @@ MonoBehaviour:
   TotalTimeForRestLifeSec: 0
   FirstGems: 5
   adsEvents:
-  - gameEvent: 0
-    adType: 2
+  - gameEvent: 7
+    adType: 0
     everyLevel: 1
     calls: 0
-  - gameEvent: 5
+  - gameEvent: 0
     adType: 0
-    everyLevel: 4
+    everyLevel: 1
     calls: 0
-  - gameEvent: 7
-    adType: 2
-    everyLevel: 2
-    calls: 0
-  - gameEvent: 15
+  - gameEvent: 14
     adType: 0
-    everyLevel: 7
-    calls: 0
-  - gameEvent: 11
-    adType: 2
-    everyLevel: 3
+    everyLevel: 1
     calls: 0
   enableUnityAds: 1
   enableGoogleMobileAds: 0
@@ -6681,10 +6673,10 @@ MonoBehaviour:
   nonRewardedVideoZone: defaultZone
   ShowChartboostAdsEveryLevel: 3
   ShowAdmobAdsEveryLevel: 4
-  dailyRewardedFrequency: 3
+  dailyRewardedFrequency: 1
   dailyRewardedFrequencyTime: 2
   dailyRewardedShown: 
-  admobUIDAndroid: ca-app-pub-9974681578637939/6393464263
+  admobUIDAndroid: ca-app-pub-9636169476304878/1768629312
   admobUIDIOS: 
   admobRewardedUIDAndroid: ca-app-pub-9974681578637939/5210526556
   admobRewardedUIDIOS: ca-app-pub-9974681578637939/5210526556
@@ -10668,8 +10660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -460.5}
-  m_SizeDelta: {x: 435, y: 230}
+  m_AnchoredPosition: {x: 1.7, y: 8}
+  m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825215779
 MonoBehaviour:
