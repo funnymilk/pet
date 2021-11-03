@@ -6656,18 +6656,18 @@ MonoBehaviour:
   adsEvents:
   - gameEvent: 7
     adType: 0
-    everyLevel: 1
-    calls: 0
-  - gameEvent: 0
-    adType: 0
-    everyLevel: 1
+    everyLevel: 5
     calls: 0
   - gameEvent: 14
     adType: 0
     everyLevel: 1
     calls: 0
+  - gameEvent: 0
+    adType: 0
+    everyLevel: 3
+    calls: 0
   enableUnityAds: 1
-  enableGoogleMobileAds: 0
+  enableGoogleMobileAds: 1
   enableChartboostAds: 0
   rewardedVideoZone: rewardedVideoZone
   nonRewardedVideoZone: defaultZone
@@ -6678,7 +6678,7 @@ MonoBehaviour:
   dailyRewardedShown: 
   admobUIDAndroid: ca-app-pub-9636169476304878/1768629312
   admobUIDIOS: 
-  admobRewardedUIDAndroid: ca-app-pub-9974681578637939/5210526556
+  admobRewardedUIDAndroid: ca-app-pub-9636169476304878/1768629312
   admobRewardedUIDIOS: ca-app-pub-9974681578637939/5210526556
   LoginEnable: 0
   ShowRateEvery: 5
@@ -10643,7 +10643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &825215778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20724,7 +20724,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1528037297
 Canvas:
   m_ObjectHideFlags: 0
