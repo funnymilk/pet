@@ -6912,10 +6912,10 @@ MonoBehaviour:
   - count: 150
     price: 14.99
   InAppIDs:
-  - com.best2dgamesstudio.jellygarden.10gems
-  - com.best2dgamesstudio.jellygarden.50gems
-  - com.best2dgamesstudio.jellygarden.100gems
-  - com.best2dgamesstudio.jellygarden.150gems
+  - adventure.cat.shops.10gems
+  - adventure.cat.shops.50gems
+  - adventure.cat.shops.100gems
+  - adventure.cat.shops.150gems
   GoogleLicenseKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhBxnXNyc+hprmJd0Adr+D66pPnoDfdoqb8o/fw/7KoE8xAe0MlA5leXKqQ/Ib0Iug4wLuFfDrtoee4i/kjq7+sLum0G74+Cpe4VwVeyEH9mq3Tf1o6Eyq/t1vDthsORCxgErSnfJ/EiSn7Uy7HyIvX5C76bmZk5YqLpyZG04yAmJtlLXZvJAiLpSRIUdeN1nuKU0dl6aEBPO3STedKEqP9Yr/z0nmcbpxFpf6mIAZC/kagMmp+nm63ajvzGS2IHatYdtFMyfiLL6p0RXH5rLgamjuJ8/7/8lXwWO/lZFLcxmN0wuCN3RALz4e2wdOtaiu0w9sgdHK0gZ/54ZSsRE+QIDAQAB
   thrivingBlockDestroyed: 0
   BoostColorfullBomb: 0
