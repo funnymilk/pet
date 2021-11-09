@@ -6654,43 +6654,35 @@ MonoBehaviour:
   TotalTimeForRestLifeSec: 0
   FirstGems: 5
   adsEvents:
-  - gameEvent: 0
-    adType: 2
+  - gameEvent: 7
+    adType: 0
+    everyLevel: 5
+    calls: 0
+  - gameEvent: 14
+    adType: 0
     everyLevel: 1
     calls: 0
-  - gameEvent: 5
+  - gameEvent: 0
     adType: 0
-    everyLevel: 4
-    calls: 0
-  - gameEvent: 7
-    adType: 2
-    everyLevel: 2
-    calls: 0
-  - gameEvent: 15
-    adType: 0
-    everyLevel: 7
-    calls: 0
-  - gameEvent: 11
-    adType: 2
     everyLevel: 3
     calls: 0
   enableUnityAds: 1
-  enableGoogleMobileAds: 0
+  enableGoogleMobileAds: 1
   enableChartboostAds: 0
   rewardedVideoZone: rewardedVideoZone
   nonRewardedVideoZone: defaultZone
   ShowChartboostAdsEveryLevel: 3
   ShowAdmobAdsEveryLevel: 4
-  dailyRewardedFrequency: 3
+  dailyRewardedFrequency: 1
   dailyRewardedFrequencyTime: 2
   dailyRewardedShown: 
-  admobUIDAndroid: ca-app-pub-9974681578637939/6393464263
+  admobUIDAndroid: ca-app-pub-9636169476304878/1768629312
   admobUIDIOS: 
-  admobRewardedUIDAndroid: ca-app-pub-9974681578637939/5210526556
+  admobRewardedUIDAndroid: ca-app-pub-9636169476304878/1768629312
   admobRewardedUIDIOS: ca-app-pub-9974681578637939/5210526556
   LoginEnable: 0
-  ShowRateEvery: 5
-  RateURL: market://details?q=pname:com.mycopmany.myapp/
+  ShowRateEvery: 7
+  RateURL: https://play.google.com/store/apps/details?id=funny.adventure.cat
   rewardedGems: 5
   losingLifeEveryGame: 0
   facebookButton: {fileID: 66756232}
@@ -6920,10 +6912,10 @@ MonoBehaviour:
   - count: 150
     price: 14.99
   InAppIDs:
-  - com.best2dgamesstudio.jellygarden.10gems
-  - com.best2dgamesstudio.jellygarden.50gems
-  - com.best2dgamesstudio.jellygarden.100gems
-  - com.best2dgamesstudio.jellygarden.150gems
+  - adventure.cat.shops.10gems
+  - adventure.cat.shops.50gems
+  - adventure.cat.shops.100gems
+  - adventure.cat.shops.150gems
   GoogleLicenseKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhBxnXNyc+hprmJd0Adr+D66pPnoDfdoqb8o/fw/7KoE8xAe0MlA5leXKqQ/Ib0Iug4wLuFfDrtoee4i/kjq7+sLum0G74+Cpe4VwVeyEH9mq3Tf1o6Eyq/t1vDthsORCxgErSnfJ/EiSn7Uy7HyIvX5C76bmZk5YqLpyZG04yAmJtlLXZvJAiLpSRIUdeN1nuKU0dl6aEBPO3STedKEqP9Yr/z0nmcbpxFpf6mIAZC/kagMmp+nm63ajvzGS2IHatYdtFMyfiLL6p0RXH5rLgamjuJ8/7/8lXwWO/lZFLcxmN0wuCN3RALz4e2wdOtaiu0w9sgdHK0gZ/54ZSsRE+QIDAQAB
   thrivingBlockDestroyed: 0
   BoostColorfullBomb: 0
@@ -10651,7 +10643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &825215778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10668,8 +10660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -460.5}
-  m_SizeDelta: {x: 435, y: 230}
+  m_AnchoredPosition: {x: 1.7, y: 8}
+  m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825215779
 MonoBehaviour:
@@ -20050,7 +20042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1453702914
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20732,7 +20724,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1528037297
 Canvas:
   m_ObjectHideFlags: 0
@@ -25729,7 +25721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1998784657
 RectTransform:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class RewAdmobManager : MonoBehaviour
 {
     public static RewAdmobManager THIS;
 #if GOOGLE_MOBILE_ADS
-   private RewardBasedVideoAd rewardBasedVideo;
+   private RewardedAd rewardBasedVideo;
     private Action resultCallback;
 
     private void Awake()
@@ -22,8 +22,16 @@ public class RewAdmobManager : MonoBehaviour
 
     public void Start()
     {
+#if UNITY_ANDROID
+        string adUnitId = InitScript.Instance.admobRewardedUIDAndroid;
+#elif UNITY_IPHONE
+            string adUnitId = InitScript.Instance.admobRewardedUIDIOS;
+#else
+            string adUnitId = "unexpected_platform";
+#endif
+        
         // Get singleton reward based video ad reference.
-        this.rewardBasedVideo = RewardBasedVideoAd.Instance;
+        this.rewardBasedVideo = new RewardedAd(adUnitId);
 
         // Called when an ad request has successfully loaded.
         rewardBasedVideo.OnAdLoaded += HandleRewardBasedVideoLoaded;
@@ -32,31 +40,23 @@ public class RewAdmobManager : MonoBehaviour
         // Called when an ad is shown.
         rewardBasedVideo.OnAdOpening += HandleRewardBasedVideoOpened;
         // Called when the ad starts to play.
-        rewardBasedVideo.OnAdStarted += HandleRewardBasedVideoStarted;
+        //rewardBasedVideo.OnAdStarted += HandleRewardBasedVideoStarted;
         // Called when the user should be rewarded for watching a video.
-        rewardBasedVideo.OnAdRewarded += HandleRewardBasedVideoRewarded;
+        rewardBasedVideo.OnUserEarnedReward += HandleRewardBasedVideoRewarded;
         // Called when the ad is closed.
         rewardBasedVideo.OnAdClosed += HandleRewardBasedVideoClosed;
         // Called when the ad click caused the user to leave the application.
-        rewardBasedVideo.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
+        rewardBasedVideo.OnAdFailedToShow += HandleRewardBasedVideoLeftApplication;
 
         this.RequestRewardBasedVideo();
     }
 
     private void RequestRewardBasedVideo()
     {
-        #if UNITY_ANDROID
-            string adUnitId = InitScript.Instance.admobRewardedUIDAndroid;
-        #elif UNITY_IPHONE
-            string adUnitId = InitScript.Instance.admobRewardedUIDIOS;
-        #else
-            string adUnitId = "unexpected_platform";
-        #endif
-
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
         // Load the rewarded video ad with the request.
-        this.rewardBasedVideo.LoadAd(request, adUnitId);
+        this.rewardBasedVideo.LoadAd(request);
     }
 
     public bool IsRewardedAdIsLoaded()
@@ -79,7 +79,7 @@ public class RewAdmobManager : MonoBehaviour
     {
         MonoBehaviour.print(
             "HandleRewardBasedVideoFailedToLoad event received with message: "
-                             + args.Message);
+                             + args.LoadAdError);
     }
 
     public void HandleRewardBasedVideoOpened(object sender, EventArgs args)
@@ -96,6 +96,11 @@ public class RewAdmobManager : MonoBehaviour
     {
         MonoBehaviour.print("HandleRewardBasedVideoClosed event received");
         this.RequestRewardBasedVideo();
+
+        if (LevelManager.THIS?.gameStatus == GameState.PreFailed)
+        {
+            LevelManager.THIS.gameStatus = GameState.GameOver;
+        }
     }
 
     public void HandleRewardBasedVideoRewarded(object sender, Reward args)

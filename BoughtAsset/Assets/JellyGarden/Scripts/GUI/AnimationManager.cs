@@ -121,8 +121,8 @@ public class AnimationManager : MonoBehaviour
 #if UNITY_ADS
         stillShow = !InitScript.Instance.GetRewardedUnityAdsReady ();
 #endif
-			if (!InitScript.Instance.enableGoogleMobileAds || !RewAdmobManager.THIS.IsRewardedAdIsLoaded() || !stillShow)
-				videoAdsButton.gameObject.SetActive(false);
+		//	if (!InitScript.Instance.enableGoogleMobileAds || !RewAdmobManager.THIS.IsRewardedAdIsLoaded() || !stillShow)
+		//		videoAdsButton.gameObject.SetActive(false);
 #else
 			videoAdsButton.gameObject.SetActive(false);
 #endif
