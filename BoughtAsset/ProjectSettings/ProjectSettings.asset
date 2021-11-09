@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.1
+  bundleVersion: 0.0.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -163,7 +163,7 @@ PlayerSettings:
     iPhone: 1
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 22
+  AndroidBundleVersionCode: 24
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
@@ -690,7 +690,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     4: GOOGLE_MOBILE_ADS
-    7: GOOGLE_MOBILE_ADS
+    7: GOOGLE_MOBILE_ADS;UNITY_INAPPS
     14: GOOGLE_MOBILE_ADS
     15: FACEBOOK;GAMESPARKS;UNITY_INAPPS
   additionalCompilerArguments: {}
@@ -780,6 +780,7 @@ PlayerSettings:
     Collab: 1
     ErrorHub: 0
     Hub: 0
+    Purchasing: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -794,11 +795,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 4b553c82-4962-4c58-8e3d-753fe70aca1e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: JellyGarden
-  organizationId: 
+  projectName: Adventure cat
+  organizationId: funnymilk
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   virtualTexturingSupportEnabled: 0
