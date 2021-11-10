@@ -98,7 +98,9 @@ public class AnimationManager : MonoBehaviour
         }
 
         var videoAdsButton = transform.Find("Image/Video");
+        videoAdsButton = null;
         if (videoAdsButton == null) videoAdsButton = transform.Find("Video");
+        videoAdsButton = null;
         if (videoAdsButton != null )
         {
             var videoButton = videoAdsButton == null ? transform.Find("Video") : videoAdsButton;
