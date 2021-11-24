@@ -97,10 +97,10 @@ public class RewAdmobManager : MonoBehaviour
         MonoBehaviour.print("HandleRewardBasedVideoClosed event received");
         this.RequestRewardBasedVideo();
 
-        if (LevelManager.THIS?.gameStatus == GameState.PreFailed)
+        /*if (LevelManager.THIS?.gameStatus == GameState.PreFailed)
         {
             LevelManager.THIS.gameStatus = GameState.GameOver;
-        }
+        }*/
     }
 
     public void HandleRewardBasedVideoRewarded(object sender, Reward args)
