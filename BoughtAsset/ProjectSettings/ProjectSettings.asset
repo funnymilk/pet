@@ -690,7 +690,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     4: GOOGLE_MOBILE_ADS
-    7: GOOGLE_MOBILE_ADS;UNITY_INAPPS
+    7: GOOGLE_MOBILE_ADS
     14: GOOGLE_MOBILE_ADS
     15: FACEBOOK;GAMESPARKS;UNITY_INAPPS
   additionalCompilerArguments: {}
